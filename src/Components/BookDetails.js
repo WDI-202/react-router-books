@@ -13,8 +13,12 @@ const BookDetails = () => {
 			const data = await response.json();
 			setSelectedBook(data);
 		};
+		getData();
 	}, [bookKey]);
 	return <div>BookDetails</div>;
 };
 
 export default BookDetails;
+
+//make your card clickable which will point to the path for the selected book
+//onClick, useNavigate, use the correct property that will give you the key
